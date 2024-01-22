@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0px;
+}
+
+.navbar {
+    background-color: #e65835;
+    padding: 10px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
+.first-section-container {
+    background-image: linear-gradient(to right, #f5f293, #d99de0);
+    margin-bottom: 20px;
+}
+
+.second-section-container {
+    background-image: linear-gradient(to right, #f5f293, #d99de0);
+}
+
+.button {
+    background-color: #e65835;
+    color: white;
+    border-width: 0;
+    padding: 10px;
+    width: 150px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+.images-container {
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+.stater-image {
+    margin-left: 15px;
+}
+
+.content-container {
+    background-color: #e65835;
+    padding: 10px;
+}
+
+
+
+@media (max-width:576px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .first-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .burger-image {
+        width: 100%;
+    }
+
+    .first-section-content {
+        text-align: center;
+    }
+
+    .second-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .images-container {
+        align-self: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .content-container {
+        width: 300px;
+        align-self: center;
+    }
+
+    .lorem-heading {
+        font-size: 35px;
+    }
+
+    .lorem-paragraph {
+        font-size: 20px;
+    }
+
+    .lorem-card-paragraph {
+        color: #383636;
+        font-family: "Sans-Serif";
+        font-size: 15px;
+    }
+
+    .lorem-card-heading {
+        color: black;
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width:768px) {
+    .first-section-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-items {
+        font-size: 25px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .lorem-heading {
+        font-size: 35px;
+    }
+
+    .lorem-paragraph {
+        font-size: 23px;
+    }
+
+    .button {
+        font-size: 25px;
+    }
+
+    .first-section-content {
+        width: 50%;
+        padding: 15px;
+        align-self: center;
+    }
+
+    .burger-image {
+        width: 50%;
+    }
+
+    .second-section-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .images-container {
+        margin-right: 35px;
+    }
+
+    .lorem-card-paragraph {
+        color: #383636;
+        font-family: "Sans-Serif";
+        font-size: 18px;
+    }
+
+    .lorem-card-heading {
+        color: black;
+        font-size: 35px;
+    }
+}
